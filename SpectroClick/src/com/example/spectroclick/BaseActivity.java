@@ -3,6 +3,7 @@ package com.example.spectroclick;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -22,6 +23,9 @@ public class BaseActivity extends Activity {
         tvResult = (TextView) findViewById(R.id.tvResult);
 
         Button scanBtn = (Button) findViewById(R.id.btnScan);
+        Log.d("BaseActivity", "For Testing");
+        
+        //for testing Git
 
         //in some trigger function e.g. button press within your code you should add:
         scanBtn.setOnClickListener(new OnClickListener() {
